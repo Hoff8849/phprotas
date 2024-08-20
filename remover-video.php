@@ -11,7 +11,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(1, $id);
 
 if ($stmt->execute() === false) {
-    header('location: index.php?sucesso=0');
+    header('location: /?sucesso=0');
 }else{
-    header('location: index.php?sucesso=1');
+    header('location: /?sucesso=1');
 }
